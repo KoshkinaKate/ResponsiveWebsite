@@ -1,0 +1,267 @@
+@keyframes scroll{
+    0%{transform: translateX(0vw);
+    }
+    50%{transform: translateX(40vw);
+    }
+   100%{transform: translateX(0vw);
+    }
+}
+
+
+
+
+/* allows thee rules to apply to multiple screen sizes */
+
+/* ----------Desktop view-------------- */
+@media (max-width:1580px) {
+    body{
+        background-color: green;
+        color: salmon;
+    }
+    .hiddenContainer{
+        /* border: solid red; */
+        display: flex;
+        width:40%;
+        justify-content: space-evenly;
+    }
+    .OptionsContainer{
+        /* border: solid blue; */
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    
+    }
+    .splash1{
+        /* border:solid lime; */
+        width: 33%;
+    }
+    .splash2{
+        /* border:solid purple; */
+        display:block;
+        width: 33%;
+    
+    }
+    .mainTitle{
+        /* border:solid orange; */
+        display: block;
+        width: 33%;
+        padding:1em;
+
+    
+    }
+    .infoBox{
+        /* border: solid yellow; */
+        text-align: center;
+        font-family: abril fatface;
+        margin: 1em;
+    }
+    .midContainer{
+        border: solid red;
+        border-width: 2px;
+        /* height: 55vh; */
+        margin:1em;
+        padding:2em;
+        display: flex;
+        
+    }
+    .secret{
+        /* border:solid lime; */
+        display: block;
+        width:250px;
+        height: 250px;
+        
+    }
+}
+
+
+/* ---------------END OF DESKTOP----------- */
+
+
+
+/* ----------Mid View -Ipad  view-------------- */
+@media (max-width:880px) {
+    body{
+        background-color: blue;
+        color: peru;
+    
+    }
+    .hiddenContainer{
+        /* border: solid red; */
+        display:flex;
+        justify-content: space-evenly;
+        width: 30%;
+
+    }
+    .OptionsContainer{
+        /* border: solid blue; */
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+    
+    }
+    .splash1{
+        /* border:solid lime; */
+        width:60%;
+    }
+    .splash2{
+        /* border:solid purple; */
+        display: none;
+    
+    }
+    .mainTitle{
+        /* border:solid orange; */
+        display:block;
+        width: 40%;
+        padding:1em;
+    
+    }
+    .infoBox{
+        /* border: solid yellow; */
+        text-align: center;
+        font-family: abril fatface;
+        margin: 1em;
+    }
+    .midContainer{
+        border: solid red;
+        border-width: 2px;
+        /* height: 55vh; */
+        margin:1em;
+        padding:2em;
+        display: flex;
+    }
+    .secret{
+        border:solid lime;
+        display: none;
+        
+    }
+}
+
+
+/* ---------------END OF Mid View -Ipad----------- */
+
+
+
+/* ----------Mobile view-------------- */
+@media (max-width:680px) {
+    body{
+        background-color: black;
+        color:lemonchiffon;
+    }
+    .hiddenContainer{
+        /* border: solid red; */
+        display: none;
+        width:auto;
+        justify-content: space-evenly;
+
+    }
+    .OptionsContainer{
+        /* border: solid blue; */
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+    
+    }
+    .splash1{
+        /* border:solid lime; */
+        width:100%;
+    }
+    .splash2{
+        /* border:solid purple; */
+        display:none;
+    
+    }
+    .mainTitle{
+        /* border:solid orange; */
+        display: none;
+        padding:1em;
+    
+    }
+    .infoBox{
+        /* border: solid yellow; */
+        text-align: center;
+        font-family: abril fatface;
+        margin: 1em;
+    }
+    .midContainer{
+        border: solid red;
+        border-width: 2px;
+        /* height: 55vh; */
+        margin:1em;
+        padding:2em;
+        display: block;
+    }
+    .secret{
+        border:solid lime;
+        display: none;
+        
+    }
+}
+
+
+/* ---------------END OF Mobile----------- */
+
+
+/* General CSS */
+.navContainer{
+    border: solid white;
+    border-width: 2px;
+    /* height: 8vh; */
+    margin:1em;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+}
+.topContainer{
+    border: solid lime;
+    border-width: 2px;
+    height: 55vh;
+    margin:1em;
+    display:flex;
+}
+
+.LogoContainer{
+/* border: solid lightblue; */
+width:10%;
+}
+.logo{
+    height: 30px;
+}
+
+
+.iconContainer{
+    /* border: solid aqua; */
+}
+.smedia{
+    height: 30px;
+    width: 30px;
+}
+.smedia:hover{
+    height: 30px;
+    width: 30px;
+    border: solid white;
+    border-radius: 50%;
+}
+.welcome{
+    text-align: center;
+}
+.welcomeSm{
+    text-align: right;
+
+}
+.welcomeBtn{
+    margin:3em;
+    font-size: 15px;
+    border-radius: 12px;
+    background-color: black;
+    color:white;
+
+}
+.midPic{
+    width:100%;
+}
+.ad{
+    animation: scroll 10s infinite ease-in-out;
+    font-size: 22px;
+    
+}
